@@ -1,4 +1,4 @@
-/// @description Insert description here
+///@description movement 
 // You can write your code in this editor
 if keyboard_check(vk_up)
 {
@@ -13,3 +13,9 @@ if keyboard_check(vk_right)
 {
         image_angle -= 4;
 }
+
+if keyboard_check(vk_space)
+{
+	instance_create_layer(x, y, "Instances", obj_bullet)
+}
+move_wrap(true, true, 0)
