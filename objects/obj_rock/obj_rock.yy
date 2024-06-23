@@ -30,7 +30,7 @@
   "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
-  "solid":false,
+  "solid":true,
   "spriteId":{
     "name":"spr_rock_big",
     "path":"sprites/spr_rock_big/spr_rock_big.yy",
