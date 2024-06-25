@@ -23,7 +23,7 @@ motion_set(image_angle, speed);
 
 if keyboard_check(vk_left)
 {
-        image_angle += 4;
+         rotational_speed = rotational_speed * (1 - (delta_time/1000000) * friction) + max_speed * ((delta_time/1000000) * friction)
 }
 if keyboard_check(vk_right)
 {
