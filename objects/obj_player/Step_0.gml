@@ -38,6 +38,7 @@ if keyboard_check(vk_space)
 	{
 		shot_timer = 0;
 		instance_create_layer(x, y, "Instances", obj_bullet);
+		audio_play_sound(snd_shoot, 0 , false, 1, 0, random_range(0.8,1.2));
 	}
 }
 	
