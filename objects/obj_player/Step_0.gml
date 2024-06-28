@@ -1,12 +1,11 @@
 ///@description  
 // You can write your code in this editor
 
-
-friction = 0.4;
+//movement
+friction = 0.1;
 //accelerate
 if keyboard_check(vk_up)
 {
-
 		speed = speed * (1 - (delta_time/1000000) * friction) + max_speed * ((delta_time/1000000) * friction)
 
 }
@@ -16,6 +15,7 @@ if keyboard_check(vk_down)
 {
       speed = speed * (1 - (delta_time/1000000) * friction) - max_speed * ((delta_time/1000000) * friction)
 }
+
 
 motion_set(image_angle, speed);
 
