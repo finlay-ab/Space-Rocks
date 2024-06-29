@@ -36,8 +36,20 @@ if keyboard_check(vk_space)
 {
 	if (shot_timer >= min_time_between_shots) 
 	{
-		shot_timer = 0;
+		shot_timer = 0; 
 		instance_create_layer(x, y, "Instances", obj_bullet);
+		
+		if (powerup == player_state.spread_powerup)
+		{
+			//creates a bullet and stores its reference in _bullet
+			var _bullet = instance_create_layer(x, y, "Instances", obj_bullet);
+			_bullet.direction += 10;
+			
+			//creates another bullet and stores new refrence in _bullet
+			_bullet = instance_create_layer(x, y, "Instances", obj_bullet);
+			_bullet.direction -= 10;
+		}
+		
 		audio_play_sound(snd_shoot, 0 , false, 1, 0, random_range(0.8,1.2));
 	}
 }
