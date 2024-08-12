@@ -52,5 +52,4 @@ if keyboard_check(vk_space)
 	}
 }
 	
-
-move_wrap(true, true, 0)
+move_wrap(true, true, sprite_width/2)
