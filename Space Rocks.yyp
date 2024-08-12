@@ -59,6 +59,7 @@
     {"id":{"name":"spr_powerup_spread","path":"sprites/spr_powerup_spread/spr_powerup_spread.yy",},},
     {"id":{"name":"spr_rock_big","path":"sprites/spr_rock_big/spr_rock_big.yy",},},
     {"id":{"name":"spr_rock_small","path":"sprites/spr_rock_small/spr_rock_small.yy",},},
+    {"id":{"name":"Sprite8","path":"sprites/Sprite8/Sprite8.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
