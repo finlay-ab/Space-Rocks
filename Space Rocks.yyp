@@ -47,7 +47,9 @@
     {"id":{"name":"obj_powerup_spread","path":"objects/obj_powerup_spread/obj_powerup_spread.yy",},},
     {"id":{"name":"obj_rock","path":"objects/obj_rock/obj_rock.yy",},},
     {"id":{"name":"rm_game","path":"rooms/rm_game/rm_game.yy",},},
+    {"id":{"name":"rm_gameover","path":"rooms/rm_gameover/rm_gameover.yy",},},
     {"id":{"name":"rm_menu","path":"rooms/rm_menu/rm_menu.yy",},},
+    {"id":{"name":"rn_win","path":"rooms/rn_win/rn_win.yy",},},
     {"id":{"name":"snd_lose","path":"sounds/snd_lose/snd_lose.yy",},},
     {"id":{"name":"snd_music","path":"sounds/snd_music/snd_music.yy",},},
     {"id":{"name":"snd_rockdestroy","path":"sounds/snd_rockdestroy/snd_rockdestroy.yy",},},
@@ -66,6 +68,8 @@
   "RoomOrderNodes":[
     {"roomId":{"name":"rm_menu","path":"rooms/rm_menu/rm_menu.yy",},},
     {"roomId":{"name":"rm_game","path":"rooms/rm_game/rm_game.yy",},},
+    {"roomId":{"name":"rn_win","path":"rooms/rn_win/rn_win.yy",},},
+    {"roomId":{"name":"rm_gameover","path":"rooms/rm_gameover/rm_gameover.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

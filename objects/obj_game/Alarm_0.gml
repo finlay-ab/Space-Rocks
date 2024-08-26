@@ -1,3 +1,7 @@
 /// @description Game over
 // You can write your code in this editor
-room_restart();
+lives -= 1;
+
+if (lives == 0)
+	room_restart();
+
