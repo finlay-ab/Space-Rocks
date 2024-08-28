@@ -25,9 +25,6 @@ else
 	//sets instance colour to red to show invinsable
 	image_blend = c_red; 
 	image_alpha = 0.4
-
-	//destroys instance that it collided with
-	instance_destroy(other);
 }
 
 

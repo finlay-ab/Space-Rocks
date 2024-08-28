@@ -6,11 +6,20 @@ if (obj_game.powerup_time < 0)
 	obj_game.powerup_time = 20;
 }
 
+//destroy rock
 instance_destroy(other);
 effect_create_above(ef_explosion, x, y, 1, c_white);
-obj_game.points += 50;
 audio_play_sound(snd_rockdestroy, 0, false, 1, 0, random_range(0.6, 1.1));
 
+//add score
+obj_game.points += 50;
+if (obj_game.points >= 1000)
+{
+	room_goto(rm_win);
+}
+
+
+//spawn new rock
 direction = random(360);
 
 if sprite_index == spr_rock_big
