@@ -5,4 +5,4 @@
 event_inherited();
 
 //moved to alarm 0 
-room_goto(rm_game);
+room_goto(rm_menu);
