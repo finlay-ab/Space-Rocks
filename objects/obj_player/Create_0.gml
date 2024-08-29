@@ -6,5 +6,5 @@ enum player_state {
 	ghost_powerup = 2,
 }
 	
-
 powerup = player_state.no_powerup;
+max_speed = 20;

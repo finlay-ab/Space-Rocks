@@ -3,13 +3,13 @@
 
 //movement
 //accelerate
-if keyboard_check(vk_up)
+if (keyboard_check(vk_up) && speed < max_speed)
 {
 		motion_add(image_angle, 0.05);
 }
 
 //decellerate
-if keyboard_check(vk_down)
+if (keyboard_check(vk_down) && speed > -max_speed)
 {
 	motion_add(image_angle, -0.05);     
 }
