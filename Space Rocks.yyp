@@ -52,6 +52,7 @@
     {"id":{"name":"rm_gameover","path":"rooms/rm_gameover/rm_gameover.yy",},},
     {"id":{"name":"rm_menu","path":"rooms/rm_menu/rm_menu.yy",},},
     {"id":{"name":"rm_win","path":"rooms/rm_win/rm_win.yy",},},
+    {"id":{"name":"spawn_off_camera","path":"scripts/spawn_off_camera/spawn_off_camera.yy",},},
     {"id":{"name":"snd_lose","path":"sounds/snd_lose/snd_lose.yy",},},
     {"id":{"name":"snd_music","path":"sounds/snd_music/snd_music.yy",},},
     {"id":{"name":"snd_rockdestroy","path":"sounds/snd_rockdestroy/snd_rockdestroy.yy",},},

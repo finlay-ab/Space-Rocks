@@ -2,31 +2,35 @@
 // You can write your code in this editor
 
 //camera 
-cameraX = 0;
-cameraY = 0;
+global.cameraX = 0;
+global.cameraY = 0;
 
 target = obj_player;
 
-cameraWidth = 500;
-cameraHeight = 500;
+global.cameraWidth = 500;
+global.cameraHeight = 500;
 
 view_enabled = true;
 view_visible[0] = true;
 
-camera_set_view_size(view_camera[0], cameraWidth, cameraHeight);
+camera_set_view_size(view_camera[0], global.cameraWidth, global.cameraHeight);
 
+if(room == rm_game)
+{
+	spawn_off_camera(obj_rock, 40);
+}
 
 //display
 displayScale = 2;
 
-displayWidth = cameraWidth * displayScale;
-displayHeight = cameraHeight * displayScale;
+displayWidth = global.cameraWidth * displayScale;
+displayHeight = global.cameraHeight * displayScale;
 
 window_set_size(displayWidth, displayHeight);
 surface_resize(application_surface, displayWidth, displayHeight);
 
 //GUI
-display_set_gui_size(cameraWidth, cameraHeight);
+display_set_gui_size(global.cameraWidth, global.cameraHeight);
 
 
 //calls alarm 0 after 1 frame
