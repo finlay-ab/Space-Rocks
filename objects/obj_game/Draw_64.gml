@@ -11,9 +11,9 @@ switch(room){
 		draw_set_halign(fa_center);
 		var c = c_yellow;
 		draw_text_transformed_color(
-		room_width/2, 75, "Space Rocks", 3, 3, 0, c,c,c,c, 1
+		room_width/2, 5, "Space Rocks", 1.5, 1.5, 0, c,c,c,c, 1
 		);
-		draw_text(room_width/2, 250, "Score 1000 points to win!");
+		draw_text_transformed(room_width/2, 100, "Score 1000 points to win!",0.5,0.5,1);
 		draw_set_halign(fa_left);
 		break;
 	
@@ -21,7 +21,7 @@ switch(room){
 		draw_set_halign(fa_center);
 		var c = c_lime;
 		draw_text_transformed_color(
-		room_width/2, 75, "YOU WIN!", 3, 3, 0, c,c,c,c, 1
+		room_width/2, 5, "YOU WIN!", 1.5, 1.5, 0, c,c,c,c, 1
 		);
 		draw_set_halign(fa_left);
 		break;
@@ -30,7 +30,7 @@ switch(room){
 		draw_set_halign(fa_center);
 		var c = c_red;
 		draw_text_transformed_color(
-		room_width/2, 75, "YOU LOST!", 3, 3, 0, c,c,c,c, 1
+		room_width/2, 5, "YOU LOST!", 1.5, 1.5, 0, c,c,c,c, 1
 		);
 		draw_text(room_width/2, 250, "Score: " + string(score));
 		draw_set_halign(fa_left);
